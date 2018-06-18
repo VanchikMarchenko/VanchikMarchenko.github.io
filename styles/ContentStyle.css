@@ -1,0 +1,12 @@
+.ContentContainer {
+	width: 100%;
+	height: 450px;
+
+	padding: 25px;
+}
+
+.HelpContent,
+.AboutContent,
+.HomeContent {
+	font-size: 18px;
+}

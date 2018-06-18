@@ -1,0 +1,28 @@
+.Menu {
+	width: 100%;
+}
+
+.MenuItem {
+	height: 100%;
+	width: calc(100% / 3);
+
+	float: left;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	cursor: pointer;
+
+	font-size: 18px;
+	text-align: center;
+
+	padding-top: 12px;
+}
+
+.MenuItem:hover {
+	background-color: #79A8CF;
+
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}

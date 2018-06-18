@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+
+	<!--Заголовок-->
+	<title>Сайт конвертер валют</title>
+
+	<!--Подключение ресурсов скриптов-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<!--Подключение ресурсов стилей-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--Подключение стилей-->
+	<link rel="stylesheet" href="styles/styles.css" />
+	<link rel="stylesheet" href="styles/HeadStyle.css" />
+	<link rel="stylesheet" href="styles/TitleStyle.css" />
+	<link rel="stylesheet" href="styles/MenuStyle.css" />
+	<link rel="stylesheet" href="styles/ContentStyle.css" />
+	<link rel="stylesheet" href="styles/FooterStyle.css" />
+</head>
+
+<body>
+	<div id="PluginMain" class="MainContainer">
+		<div class="HeadContainer">
+			<div class="HeadTitleBlock">
+				<div class="HeadTitleItem HeadTitleBlockIcon glyphicon glyphicon-check"></div>
+				<div class="HeadTitleItem HeadTitleBlockText">Конвертер валют</div>
+			</div>
+
+			<div class="MenuBlock">
+				<div class="MenuItem MenuItemHome" target="home">Главная</div>
+				<div class="MenuItem MenuItemAbout" target="about">О программе</div>
+				<div class="MenuItem MenuItemHelp" target="help">Помощь</div>
+			</div>
+		</div>
+
+		<div class="ContentContainer">
+			<div class="window HomeContent">
+				<p>Зачение (в долларах):</p>
+				<p>
+					<input type="number" class="DollarInput" />
+				</p>
+
+				<p>Зачение (в евро):</p>
+				<p>
+					<input type="number" class="EuroInput" />
+				</p>
+
+				<p>Зачение (в гривнах):</p>
+				<p>
+					<input type="number" class="GrivInput" />
+				</p>
+			</div>
+
+			<div class="window AboutContent HiddenContainer">
+				<p>Конвертируемость (от лат. convertere — обменять) — свойство валют обмениваться между собой.</p>
+				<p>Конвертер валют онлайн — инструмент, который позволит вам рассчитать соотношения актуальных курсов денежных средств всего мира на сегодня.</p>
+			</div>
+
+			<div class="window HelpContent HiddenContainer">
+				<p>Конвертируемость валют (от лат. convertere — обменять) — свойство валют обмениваться между собой. Валюта конвертируема, если резиденты и нерезиденты (иностранцы) имеют права в неограниченном количестве обменять её на другую валюту или банковские металлы.</p>
+				<p>Википедия.</p>
+			</div>
+		</div>
+
+		<div class="FooterContainer">
+		</div>
+	</div>
+
+	<!--Загрузка скриптов-->
+	<script type="text/javascript" src="scripts/WindowsManager.js"></script>
+	<script type="text/javascript" src="scripts/MenuManager.js"></script>
+
+	<script type="text/javascript" src="scripts/Converter.js"></script>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+	<!--Проверка состояния jQuery-->
+	<script type="text/javascript">
+		if (window.jQuery) {
+			console.log('jQuery подключен');
+		} else {
+			console.log('jQuery не подключен');
+		}
+	</script>
+
+	<!--Запуск-->
+	<script type="text/javascript">
+		let plugin = new Plugin('PluginMain', 'MainContainer');
+		plugin.Start();
+	</script>
+</body>
+
+</html>

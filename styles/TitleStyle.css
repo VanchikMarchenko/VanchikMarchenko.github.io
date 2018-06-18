@@ -1,0 +1,25 @@
+.HeadTitleBlock {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.HeadTitleBlock:hover {
+	background-color: #79A8CF;
+
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.HeadTitleItem {
+	padding-top: 15px;
+	padding-left: 15px;
+
+	font-size: 26px;
+
+	float: left;
+}
+
+.HeadTitleBlockIcon {
+	padding-top: 19px;
+}
